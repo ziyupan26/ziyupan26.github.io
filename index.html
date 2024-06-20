@@ -4,7 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    /* styles.css */
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern and clean font */
+            box-sizing: border-box;
+        }
+
+        header {
+            background: #f8f9fa;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            padding: 0;
+            list-style-type: none;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 90vh; /* Responsive based on viewport height */
+        }
+
+        .hero-text {
+            flex: 1;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .hero-image {
+            flex: 1;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            display: block; /* Ensures no extra space below image */
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+            }
+
+            .hero-text, .hero-image {
+                flex: none;
+                width: 100%;
+            }
+        }
+    </style>
+
     <title>Your Portfolio</title>
 </head>
 <body>
